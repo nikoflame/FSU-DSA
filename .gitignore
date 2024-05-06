@@ -1,0 +1,7 @@
+*.vsidx
+*.VC.db
+*.VC.db-shm
+*.VC.db-wal
+*.VC.opendb
+.vs/
+x64/
