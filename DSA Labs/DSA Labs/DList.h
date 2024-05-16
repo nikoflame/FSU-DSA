@@ -54,12 +54,12 @@ NOTE: If the unit test is not on, that code will not be compiled!
 #define LAB3_INSERT_EMPTY				1
 #define LAB3_INSERT_HEAD				1
 #define LAB3_INSERT_MIDDLE				1
-#define LAB3_ERASE_EMPTY				0
-#define LAB3_ERASE_HEAD					0
-#define LAB3_ERASE_TAIL					0
-#define LAB3_ERASE_MIDDLE				0
-#define LAB3_ASSIGNMENT_OP				0
-#define LAB3_COPY_CTOR					0
+#define LAB3_ERASE_EMPTY				1
+#define LAB3_ERASE_HEAD					1
+#define LAB3_ERASE_TAIL					1
+#define LAB3_ERASE_MIDDLE				1
+#define LAB3_ASSIGNMENT_OP				1
+#define LAB3_COPY_CTOR					1
 
 template<typename Type>
 class DList {
@@ -149,12 +149,22 @@ public:
 
 	DList(const DList& _copy)  {
 		// TODO: Implement this method
-		
+		mHead = nullptr;
+		mTail = nullptr;
+		mSize = 0;
+		*this = _copy;
 	}
 
 	DList& operator=(const DList& _assign) {
 		// TODO: Implement this method
-		
+		if (this == &_assign)
+			return *this;
+
+		Clear();
+		Iterator it = _assign.Begin();
+		for (int i = 0; i < _assign.mSize; i++, it++)
+			AddTail(it.mCurr->data);
+		return *this;
 	}
 
 	void AddHead(const Type& _data) {
@@ -222,7 +232,36 @@ public:
 
 	Iterator Erase(Iterator& _iter) {
 		// TODO: Implement this method
-		
+		if (_iter.mCurr == nullptr)
+			return _iter;
+		if (_iter.mCurr == mHead && _iter.mCurr == mTail) {
+			Clear();
+			_iter.mCurr = nullptr;
+		}
+
+		Node* nodeToDelete = _iter.mCurr;
+
+		if (_iter.mCurr == mHead) {
+			mHead->next->prev = nullptr;
+			mHead = mHead->next;
+		}
+		else if (_iter.mCurr == mTail) {
+			mTail->prev->next = nullptr;
+			mTail = mTail->prev;
+		}
+		else {
+			_iter.mCurr->prev->next = _iter.mCurr->next;
+			_iter.mCurr->next->prev = _iter.mCurr->prev;
+		}
+
+		if (_iter.mCurr != nullptr) {
+			_iter++;
+			delete nodeToDelete;
+		}
+
+		mSize--;
+
+		return _iter;
 	}
 
 	Iterator Begin() const {
