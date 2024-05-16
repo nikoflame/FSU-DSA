@@ -32,16 +32,16 @@ NOTE: If the unit test is not on, that code will not be compiled!
 
 
 // Main toggle
-#define LAB_4	1
+#define LAB_4	0
 
 // Individual unit test toggles
-#define LAB4_QUEUE_ADD			1
-#define LAB4_STACK_ADD			1
-#define LAB4_QUEUE_REMOVE		1
-#define LAB4_STACK_REMOVE		1
-#define LAB4_INSERT_ITER		1
-#define LAB4_INSERT_INDEX		1
-#define LAB4_REMOVE_DECIMAL		1
+#define LAB4_QUEUE_ADD			0
+#define LAB4_STACK_ADD			0
+#define LAB4_QUEUE_REMOVE		0
+#define LAB4_STACK_REMOVE		0
+#define LAB4_INSERT_ITER		0
+#define LAB4_INSERT_INDEX		0
+#define LAB4_REMOVE_DECIMAL		0
 
 /************/
 /* Includes */
