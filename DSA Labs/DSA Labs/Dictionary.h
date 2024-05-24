@@ -32,21 +32,21 @@ NOTE: If the unit test is not on, that code will not be compiled!
 
 
 // Main toggle
-#define LAB_5	1
+#define LAB_5	0
 
 // Individual unit test toggles
-#define LAB5_PAIR_CTOR				1
-#define LAB5_CTOR					1
-#define LAB5_DTOR					1
-#define LAB5_CLEAR					1
-#define LAB5_INSERT_NEW				1
-#define LAB5_INSERT_EXISTING		1
-#define LAB5_FIND					1
-#define LAB5_FIND_NOT_FOUND			1
-#define LAB5_REMOVE					1
-#define LAB5_REMOVE_NOT_FOUND		1
-#define LAB5_ASSIGNMENT_OP			1
-#define LAB5_COPY_CTOR				1
+#define LAB5_PAIR_CTOR				0
+#define LAB5_CTOR					0
+#define LAB5_DTOR					0
+#define LAB5_CLEAR					0
+#define LAB5_INSERT_NEW				0
+#define LAB5_INSERT_EXISTING		0
+#define LAB5_FIND					0
+#define LAB5_FIND_NOT_FOUND			0
+#define LAB5_REMOVE					0
+#define LAB5_REMOVE_NOT_FOUND		0
+#define LAB5_ASSIGNMENT_OP			0
+#define LAB5_COPY_CTOR				0
 
 /************/
 /* Includes */
