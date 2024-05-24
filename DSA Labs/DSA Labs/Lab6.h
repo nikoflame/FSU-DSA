@@ -32,15 +32,15 @@ NOTE: If the unit test is not on, that code will not be compiled!
 
 
 // Main toggle
-#define LAB_6	1
+#define LAB_6	0
 
 // Individual unit test toggles
-#define LAB6_POPULATE_LETTER_VALUES	1
-#define LAB6_GET_LETTER_VALUE		1
-#define LAB6_GET_WORD_VALUE			1
-#define LAB6_CREATE_PAIR			1
-#define LAB6_LOAD_FILE				1
-#define LAB6_FIND_WORD_SCORE		1
+#define LAB6_POPULATE_LETTER_VALUES	0
+#define LAB6_GET_LETTER_VALUE		0
+#define LAB6_GET_WORD_VALUE			0
+#define LAB6_CREATE_PAIR			0
+#define LAB6_LOAD_FILE				0
+#define LAB6_FIND_WORD_SCORE		0
 
 /************/
 /* Includes */
