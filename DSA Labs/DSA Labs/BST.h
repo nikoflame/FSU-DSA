@@ -37,36 +37,36 @@ NOTE: If the unit test is not on, that code will not be compiled!
 
 
 // Main toggle
-#define LAB_7	1
+#define LAB_7	0
 
 // Individual unit test toggles
-#define BST_CTOR								1
-#define BST_NODE_CTOR							1
-#define BST_PUSH_EMPTY							1
-#define BST_PUSH_LEFT							1
-#define BST_PUSH_RIGHT							1
-#define BST_CLEAR								1
-#define BST_DTOR								1
-#define BST_CONTAINS_FOUND						1
-#define BST_CONTAINS_NOTFOUND					1
-#define BST_REMOVE_CASE0_ROOT					1
-#define BST_REMOVE_CASE0_LEFT					1
-#define BST_REMOVE_CASE0_RIGHT					1
-#define BST_REMOVE_CASE1_ROOT_LEFT				1
-#define BST_REMOVE_CASE1_ROOT_RIGHT				1
-#define BST_REMOVE_CASE1_LEFT_LEFT				1
-#define BST_REMOVE_CASE1_LEFT_RIGHT				1
-#define BST_REMOVE_CASE1_RIGHT_LEFT				1
-#define BST_REMOVE_CASE1_RIGHT_RIGHT			1
-#define BST_REMOVE_CASE2_CASE0					1
-#define BST_REMOVE_CASE2_CASE1					1
-#define BST_REMOVE_CASE0						1
-#define BST_REMOVE_CASE1						1
-#define BST_REMOVE_CASE2						1
-#define BST_REMOVE_NOT_FOUND					1
-#define BST_IN_ORDER_TRAVERSAL					1
-#define BST_ASSIGNMENT_OP						1
-#define BST_COPY_CTOR							1
+#define BST_CTOR								0
+#define BST_NODE_CTOR							0
+#define BST_PUSH_EMPTY							0
+#define BST_PUSH_LEFT							0
+#define BST_PUSH_RIGHT							0
+#define BST_CLEAR								0
+#define BST_DTOR								0
+#define BST_CONTAINS_FOUND						0
+#define BST_CONTAINS_NOTFOUND					0
+#define BST_REMOVE_CASE0_ROOT					0
+#define BST_REMOVE_CASE0_LEFT					0
+#define BST_REMOVE_CASE0_RIGHT					0
+#define BST_REMOVE_CASE1_ROOT_LEFT				0
+#define BST_REMOVE_CASE1_ROOT_RIGHT				0
+#define BST_REMOVE_CASE1_LEFT_LEFT				0
+#define BST_REMOVE_CASE1_LEFT_RIGHT				0
+#define BST_REMOVE_CASE1_RIGHT_LEFT				0
+#define BST_REMOVE_CASE1_RIGHT_RIGHT			0
+#define BST_REMOVE_CASE2_CASE0					0
+#define BST_REMOVE_CASE2_CASE1					0
+#define BST_REMOVE_CASE0						0
+#define BST_REMOVE_CASE1						0
+#define BST_REMOVE_CASE2						0
+#define BST_REMOVE_NOT_FOUND					0
+#define BST_IN_ORDER_TRAVERSAL					0
+#define BST_ASSIGNMENT_OP						0
+#define BST_COPY_CTOR							0
 
 
 // Templated binary search tree
