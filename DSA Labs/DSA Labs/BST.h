@@ -116,8 +116,8 @@ public:
 		if (this != &_assign) {
 			Clear();
 			Copy(_assign.mRoot);
-			return *this;
 		}
+		return *this;
 	}
 
 private:
